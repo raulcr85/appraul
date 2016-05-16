@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="bower_components/dojo/dojo.js"></script>
+		
+		<script>
+			require( ["dojo/dom", "dojo/dom-construct", "dojo/domReady!"] , function(dom, domConstruct) {
+				var m = dom.byId("midiv");
+				alert("m = " + m);
+			});
+		
+		</script>
+	</head>
+	
+	<body>
+		<div id="midiv"></div>
+	</body>
+	
+</html>
