@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		
+	</head>
+	
+	<body>
+		<div id="midiv"></div>
+		
+		<div id="parent">
+			<div id="child">
+				<div id="chilly">
+				
+				</div>	
+			</div>
+		</div>
+		
+		<div id="sibil"></div>
+		
+		<script data-dojo-config="async : true, parseOnLoad : true" 
+			src="bower_components/dojo/dojo.js"></script>
+		
+		<script>
+			require(["dojo/dom", "dojo/domReady!"], function(dom) {
+				var n = dom.byId("midiv");
+				n.innerHTML = "Hola, funciono";
+				
+				var isDesc =  dom.isDescendant("parent", "child");
+				var isDesc2 = dom.isDescendant("child", "parent");
+				var isDesc3 = dom.isDescendant("child", "sibil");
+				var isDesc4 = dom.isDescendant("chilly", "parent");
+				var isDesc5 = dom.isDescendant("chilly", "child");
+				console.log(" " + isDesc);
+				console.log(" " + isDesc2);
+				console.log(" " + isDesc3);
+				console.log(" " + isDesc4);
+				console.log(" " + isDesc5);
+			});
+			
+			
+		</script>
+		
+			
+	</body>
+	
+</html>
