@@ -1,7 +1,7 @@
 {
   "name": "appraul",
   "description": "Aplicación de prueba para aprendizaje",
-  "main": "main.html",
+  "main": "index.html",
   "keywords": [
     "pruebas",
     "app",
